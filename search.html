@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Netenfound - Home</title>
+		<style>
+		@font-face {font-family: Interstate; src: url('Interstate.ttf'); }
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: 'Interstate', Interstate;
+		}
+		
+		body {
+			background: #f4f4f4;
+		}
+		
+		nav {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			background: #5b7be5;
+			padding: 3px 5%;
+		}
+		
+		.logo {
+			margin-right: 45px;
+		}
+		
+		.nav-left, .nav-right {
+			display: flex;
+			align-items: center;
+		}
+		
+		.nav-left ul li {
+			list-style: none;
+			display: inline-block;
+			padding: 10px;
+		}
+		
+		.nav-left ul li img {
+			width: 40px;
+			margin: 0 15px;
+		}
+		
+		.nav-user-icon img {
+			width: 40px;
+			border-radius: 8%;
+			cursor: pointer;
+		}
+		
+		.search-box {
+			background: #f4f4f4;
+			width: 400px;
+			border-radius: 10px;
+			display: flex;
+			align-items: center;
+			padding: 0 5px;
+		}
+		
+		.search-box img {
+			width: 15px;
+			margin: 0 15px;
+			cursor: pointer;
+		}
+		
+		.search-box input {
+			width: 100%;
+			background: transparent;
+			padding: 10px;
+			outline: none;
+			border: 0;
+		}
+		
+		.nav-user-icon {
+			margin-left: 30px;
+		}
+		
+		.container {
+			display: flex;
+			justify-content: space-between;
+			padding: 13px 5%;
+		}
+		
+		.left-sidebar {
+			background: #060f1c;
+			flex-basis: 25%;
+			position: sticky;
+			top: 70px;
+			align-self: flex-start;
+		}
+		
+		.right-sidebar {
+			background: #060f1c;
+			flex-basis: 25%;
+			position: sticky;
+			top: 70px;
+			align-self: flex-start;
+		}
+		
+		.main-content {
+			flex-basis: 47%;
+		}
+		</style>
+	</head>
+	<body>
+		
+		<nav>
+			<div class="nav-left">
+				<img src="images/default/logo.png" alt="Netenfound" width="200" height="52">
+				<ul>
+					<li><a href="messenger.html"><img src="images/default/message.png" alt="" width="40" height="40"></li></a>
+					<li><a href="inbox.html"><img src="images/default/notification.png" alt="" width="40" height="40"></li></a>
+					<li><a href="upload.html"><img src="images/default/upload.png" alt="" width="40" height="40"></li></a>
+					<li><a href="index.html"><img src="images/default/home.png" alt="" width="40" height="40"></li></a>
+				</ul>
+			</div>
+			<div clas="nav-right">
+			
+				<div class="search-box">
+					<a href="search.html"><img src="images/default/search.png"></a>
+					<input type="text" placeholder="Search...">
+				</div>
+			</div>
+
+			<div class="nav-user-icon">
+				<img src="images/default/profile-picture.png">
+			</div>
+			
+			<div class="container">
+			<div class="left-sidebar">
+				
+			</div>
+			<div class="main-content"></div>
+			<div class="right-sidebar"></div>
+		</nav>
+	</body>
+</html>
